@@ -5,8 +5,21 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet"  href="css/bootstrap.min.css">
+<script src="js/bootstrap.js"></script>
 </head>
-<body><div class="container">
+<body>
+<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast-header">
+    <img src="..." class="rounded me-2" alt="...">
+    <strong class="me-auto">Bootstrap</strong>
+    <small>11 mins ago</small>
+    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+  <div class="toast-body">
+    Hello, world! This is a toast message.
+  </div>
+</div>
+	<div class="container">
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
@@ -54,6 +67,12 @@
  <a href="#">  <button type="button" class="list-group-item list-group-item-action">Страница 4</button></a>
   <a href="#"> <button type="button" class="list-group-item list-group-item-action" >Страница 5</button></a>
 </div>
+<h1>Заголовок 1<span class="badge bg-secondary">New</span></h1>
+<h2>Заголовок 2<span class="badge bg-secondary">New</span></h2>
+<h3>Заголовок 3<span class="badge bg-secondary">New</span></h3>
+<h4>Заголовок 4<span class="badge bg-secondary">New</span></h4>
+<h5>Заголовок 5<span class="badge bg-secondary">New</span></h5>
+<h6>Заголовок 6<span class="badge bg-secondary">New</span></h6>
 		</div>
 		<div class="col-6"><div class="card" >
   <h5 class="card-header">Какая-то штука</h5>
@@ -61,7 +80,17 @@
     <h5 class="card-title">Название</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
     <a href="#" class="btn btn-primary">Отправить</a>
-  </div></div>
+  </div>
+</div>
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Предыдущая</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Следующая</a></li>
+  </ul>
+</nav>
 	<!-- 	<div class="col-8">fgfg</div>
 		<div class="col">fggg</div> -->
 	</div>
