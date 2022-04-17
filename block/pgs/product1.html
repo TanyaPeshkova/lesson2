@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>product1</title>
+  <link rel="stylesheet"  href="../css/bootstrap.min.css">
+  <link rel="stylesheet"  href="../css/font-awesome.min.css">
+  <style type="text/css">
+    .rating-mini {
+  display: inline-block;
+  font-size: 0;
+}
+a p {
+  color: black; 
+
+}
+button {
+  text-align: center;
+}
+#dob {
+   font-size: 150%;
+}
+#dob:hover {
+  font-size: 170%;
+}
+
+a{
+  text-decoration: none;
+  color:#8B0000
+}
+.raz{
+border : 2px solid lightgrey;
+
+}
+.phot:hover{
+  padding: 0;
+    border:3px solid #2F496E;
+}
+.raz:hover {
+  border:3px solid #2F496E;
+  background-color: #2988BC
+}
+.raz:focus {
+  border:3px solid #ED8C72;
+}
+.rating-mini span {
+  padding: 0;
+  font-size: 20px;
+  line-height: 1;
+  color: lightgrey;
+}
+.rating-mini > span:before {
+  content: '★';
+}
+.rating-mini > span.active {
+  color: gold;
+}
+  </style>
+  <script type="text/javascript">
+    var imgs=new Array('../img/xxx1.jpg','../img/xxx7.jpg','../img/xxx13.jpg','../img/xxx14.jpg','../img/xxx15.jpg','../img/xxx16.jpg','../img/xxx17.jpg')
+    function chang (p){
+    document.getElementById('mainimg').src = imgs[p]}
+     function liked () {
+  document.getElementById('fi').classList.toggle('fa-heart')
+  document.getElementById('fi').classList.toggle('fa-heart-o')
+    document.getElementById('lh').classList.toggle('visually-hidden')
+ }
+ function toast() {
+  document.getElementById('liveToast').classList.toggle('show');
+  setTimeout("document.getElementById('liveToast').classList.toggle('show')",3000)
+   document.getElementById('hl').classList.toggle('visually-hidden')
+}
+elems = ['белый', 'черный','красный','синий','серый']
+function smena(t){
+  document.getElementById('text').textContent = 'Цвет - ' + elems[t]
+}
+  </script>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+  <div class="container-fluid color">
+    <a class="navbar-brand " href="../index.html">Главная страница</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="bio.html">Биография</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="photo.html">Фотографии</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="songs.html">Песни</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active" href="shop.html">
+          Магазин</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+        <button class="btn btn-outline-light" type="submit">Поиск</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="container mt-3 rounded-pill" >
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="shop.html">Каталог</a></li>
+    <li class="breadcrumb-item"><a href="#">XXXTentancion</a></li>
+    <li class="breadcrumb-item"> <a href="shop.html">Мерч с исполнителем</a></li>
+        <li class="breadcrumb-item active" aria-current="page">"XXXTentancion Broken Heart"</li>
+  </ol>
+</nav><div class="row" style="border-bottom: solid lightgrey "> <div class="col-9"></div> <div class="col-3"><div class="row"><div class="col-6"></div><div class="col-2"><i class="fa fa-user-o" style="font-size:180%"aria-hidden="true" ></i></div><div class="col-2"><i id="gl" class="fa fa-heart-o" aria-hidden="true" style="font-size:180%" ><span id="lh" class="position-absolute translate-middle p-2 bg-danger border border-light rounded-circle visually-hidden">
+  </span></i></div><div class="col-2"><i class="fa fa-shopping-cart"style="font-size:180%" aria-hidden="true"><span id="hl" class="position-absolute translate-middle p-2 bg-danger border border-light rounded-circle visually-hidden"></i></div></div></div></div>
+<h2>Мерч с исполнителем 6 товаров</h2>
+</div>
+<div class="container">
+
+  <div class="row">
+    <div class="col-1">
+      <div class="row mt-3">
+        <img src="../img/xxx1.jpg"onclick="chang(0)" class="phot">
+    </div>
+    <div class="row mt-3 "><img src="../img/xxx13.jpg" onclick="chang(2)" class="phot">
+    </div>
+    <div class="row mt-3"><img src="../img/xxx7.jpg" onclick="chang(1)" class="phot">
+    </div>
+    </div>
+    <div class="col-5"> <div class="row"><img src="../img/xxx1.jpg" id="mainimg"> </div>
+    </div>
+
+    <div class="col-6">
+      <div class="row">
+        <p style="color:grey">Детский свитшот 3D</p>
+        <h3>"XXXTentancion Broken Heart"</h3>
+        <div class="col-3">
+        <p style="color:grey">Артикул: 1659941</p></div> <div class="col-2" style="display:inline-block;"> 
+              <div class="rating-mini ">
+  <span class="active"></span>  
+  <span class="active"></span>    
+  <span class="active"></span>  
+  <span class="active"></span>    
+  <span></span>
+      </div> 
+    </div><div class="col-3">
+        <p style="color:grey">Отзывов 228</p></div>
+  </div>
+  <div class="row">
+      <div style="display:inline-block; width: 20%; font-size: 200% ">1 990 ₽</div>
+    <div class="mt-3" style="text-decoration-line: line-through; color:grey;display:inline-block;width: 15%">3 090 ₽</div><div class="mt-3" style="display:inline-block; width: 8%;background-color: red; height: 20%;color: white; font-weight: 700; border-radius: 300px 50px 50px 350px ">-36%</div>
+  </div>
+  <div class="row">
+    <div style="display:inline-block; width: 10%; color:grey">Размер</div>
+    <div  style=" color:#8B0000;display:inline-block;width: 25%">Таблица размеров</div>
+  </div>
+  <div class="row">
+    <button class=" raz col-2  rounded ms-1 p-1 mt-1"> 86(см)</button>
+    <button class=" raz col-2  rounded ms-1 p-1 mt-1"> 98(см)</button>
+    <button class="raz col-2  rounded ms-1 p-1 mt-1" > 104(см)</button>
+    <button class="raz col-2  rounded ms-1 p-1 mt-1" > 116(см)</button>
+</div> 
+  <div class="row">
+  <button class="raz col-2  rounded ms-1 p-1 mt-1 " > 128(см)</button>
+  <button class="raz col-2  rounded ms-1 p-1 mt-1 " > 140(см)</button>
+  <button class="raz col-2  rounded ms-1 p-1 mt-1 " > 152(см)</button>
+  <button class="raz col-2 rounded ms-1 p-1 mt-1 " > 158(см)</button>
+</div>
+  <div class="row">
+    <button class="raz col-2  rounded ms-1 p-1 mt-1" > 164(см)</button>
+    <button class="raz col-2  rounded ms-1 p-1 mt-1" > 170(см)</button>
+</div>
+<div class="row mt-5">
+  <div id="text">Цвет - красный</div>
+   <div class="raz rounded-pill ms-2 " style="display: inline-block;background:white; width: 40px;height: 40px" onclick="chang(4),smena(0)"></div>
+  <div class="raz rounded-pill ms-2" style="display: inline-block; background: black; width: 40px;height: 40px" onclick="chang(3),smena(1)"></div>
+   <div class="raz rounded-pill ms-2" style="display: inline-block; background: red; width: 40px;height: 40px" onclick="chang(0),smena(2)"></div>
+    <div class="raz rounded-pill ms-2" style="display: inline-block; background: blue; width: 40px;height: 40px" onclick="chang(5),smena(3)"></div>
+     <div class="raz rounded-pill ms-2"onclick="chang(6),smena(4)" style="display: inline-block; background: grey; width: 40px;height: 40px"></div>
+     <p> Состав: 100% полиэстр</p>
+</div>
+<div class="row"><div class="col-10  rounded-pill p-2" id="dob" style="color: white; background-color: #063852; font-weight: 900; text-align: center" onclick="toast()">Добавить в корзину</div><div class="col-2" ><i class="fa fa-heart-o mt-2"onclick="liked()" aria-hidden="true" id="fi" style="font-size: 200%; color: red"></i></div></div>
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index:11">
+    <div id="liveToast" class="toast " role="alert" aria-live="assertive" aria-atomic="true" style="color:black">
+      <div class="toast-header">
+        <strong class="me-auto">Оповещение</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Закрыть"></button>
+      </div>
+      <div class="toast-body">
+        Этот товар был добавлен в Вашу корзину!
+      </div>
+    </div>
+  </div>
+
+<div class="row">
+  <p>Регион доставки: <button type="button" class="btn btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="border:none">
+  Северск
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Выберите регион доставки</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body"><div class="col-12">
+<div class="row"><div class="col-5"><form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Выбор страны" aria-label="Поиск"><button style="border: none; background-color: white; color:lightgrey" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+      </form></div> <div class="col-7"><form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Выбор города" aria-label="Поиск"><button style="border: none; background-color: white; color:lightgrey" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+      </form></div></div>
+      </div></div>
+<div class="row">
+    <div class="col-4 ms-2" style="overflow-y: scroll;height:400px; ">
+    <a href="#">  <p>Россия</p></a>
+    <a href="#">  <p>Казахстан</p></a>
+    <a href="#">  <p>Беларусь</p></a>
+    <a href="#">  <p>Кыргызстан</p></a>
+    <a href="#">  <p>Абхазия</p></a>
+    <a href="#">  <p>Австралия</p></a>
+    <a href="#">  <p>Австрия</p></a>
+    <a href="#">  <p>Азербайджан</p></a>
+    <a href="#">  <p>Албания</p></a>
+    <a href="#">  <p>Алжир</p></a>
+    <a href="#">  <p>Ангилья</p></a>
+    <a href="#">  <p>Ангола</p></a>
+  </div>
+    <div class="col-7"> <p style="color:grey">Популярные города</p>
+      <div class="row">
+        <div class="col-6"><p >Москва</p>
+          <p >Санкт-Петербург</p><p >Новосибирск</p><p >Екатеринбург</p><p >Омск</p></div>
+        <div class="col-6"><p >Волгоград</p>
+          <p >Уфа</p><p >Красноярск</p><p >Казань</p><p >Самара</p></div>
+      </div></div>
+</div>
+      </div>
+    </div>
+  </div>
+</div></p>
+  <p> <i class="fa fa-map-marker mx-1" aria-hidden="true"></i>Пункт выдаи и постоматы - 4 дня, 248 руб.</p>
+  <p><i class="fa fa-archive mx-1" aria-hidden="true"></i>Курьером - 2 дня, 355 руб.</p>
+  <p> <i class="fa fa-truck mx-1" aria-hidden="true"></i></i>Почта России - 3 дня, 365 руб.</p>
+</div>
+</div>
+<div class="row">
+  <h3>О товаре</h3>
+  <p>Свитшот 3D — разновидность толстовки, только без капюшона и карманов. Свободно сидит на фигуре, мягко обхватывает по верхней линии бедра. Сшита из гладкой синтетической ткани, благодаря свойствам которой принт наносится по всей поверхности изделия и имеет яркие цвета. Внутренний слой — мягкий и приятный на ощупь. Свитшот можно надевать как прямо на тело, так и поверх первого слоя одежды. Можно заказать со своим дизайном.</p>
+  <ul>
+    <li>Тип нанесения: сублимация на ткани</li>
+  <li>Детали: свободная посадка, прямой крой, мягкая тканевая резинка на рукавах и понизу свитшота</li>
+  <li>Состав: 100% полиэстер</li>
+      <li>Правила ухода: стирать при температуре не выше 40 градусов, без отбеливателя. Гладить при температуре не выше 110 градусов</li>   
+  </ul>
+  <div class="row">
+    <p style="font-size:150%;font-weight: 600">Отзывы</p>
+
+    <div class="col-4">
+      <p style="display:inline-block; width:  53%">Инна Т.</p>
+      <p style="display:inline-block; width:  18%; font-size:65%;color: grey"> 13 марта 2022</p>
+      <div class="rating-mini " style="display:inline-block; width:  25%; ">
+  <span class="active"></span>  
+  <span class="active"></span>    
+  <span class="active"></span>  
+  <span class="active"></span>    
+  <span class="active"></span>
+      </div> 
+      
+      <div style="padding: 4%; border: solid lightgrey;background-color:lightgrey"><p>Хорошо сидит, мягкая ткань, красивый принт</p> <img style="width: 100px" src="../img/1.jpg"></div>
+  </div>
+  <div class="col-4">
+    <p style="display:inline-block; width:  53%">Елена Я.</p>
+      <p style="display:inline-block; width:  18%; font-size:65%;color: grey"> 2 марта 2022</p>
+      <div class="rating-mini " style="display:inline-block; width:  25%; ">
+  <span class="active"></span>  
+  <span class="active"></span>    
+  <span class="active"></span>  
+  <span class="active"></span>    
+  <span class="active"></span>
+      </div> 
+      
+      <div style="padding: 4%; border: solid lightgrey;background-color:lightgrey"><p>Хорошее качество ткани и пошив.  Спасибо.</p> <img style="width: 100px" src="../img/1.jpg"></div>
+  </div>
+
+  <div class="col-4">
+    <p style="display:inline-block; width:  50%">Галина В.</p>
+      <p style="display:inline-block; width:  20%; font-size:65%;color: grey"> 21 февраля 2022</p>
+      <div class="rating-mini " style="display:inline-block; width:  25%; ">
+  <span class="active"></span>  
+  <span class="active"></span>    
+  <span class="active"></span>  
+  <span class="active"></span>    
+  <span class="active"></span>
+      </div> 
+      
+      <div style="padding: 4%; border: solid lightgrey;background-color:lightgrey"><p>понравился, немного большеват</p><img style="width: 100px" src="../img/1.jpg"></div>
+  </div>
+  </div>
+  <div class="row mt-3">
+    <span style="display: inline-block; width: 20%" class="mt-1"><a href="#"> Смотреть еще отзывы</a></span>
+  <button class="btn btn-light fs-5 rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1" style="width:30%; display: inline-block; border: solid lightblue 5px;">   Оставить отзыв
+
+  </button>
+</p>
+<div class="collapse" id="collapseExample1" style="margin-top: 0" >
+  <div class="card card-body "style="border-top: none">
+    <span class="dropdown-item " style="margin-top: 0"> <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Ваше имя *</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Введите Ваше имя " style="width:30%">
+
+</div></span>
+<span class="dropdown-item " style="margin-top: 0"> <div class="mb-3">
+  <label for="exampleFormControlInput2" class="form-label">Номер заказа *</label>
+  <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="12345678 " style="width:30%"></span></div></span>
+<span class="dropdown-item " style="margin-top: 0"> <div class="mb-3">
+  <label for="exampleFormControlInput3" class="form-label">Телефон *</label>
+  <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="+7(___)___-__-__ " style="width:30%"></span></div></span>
+<span class="dropdown-item " style="margin-top: 0"> <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label"> Email *</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="example@mail.com " style="width:30%"></span></div></span>
+  <span class="dropdown-item " style="margin-top: 0"> <div class="mb-3">
+  <div class="btn-group mt-2">
+  <button class="btn btn-light btn dropdown-toggle ms-1  "  type="button" data-bs-toggle="dropdown" aria-expanded="false" style="border: solid 1px lightgrey; border-radius: 10px; background-color: white;width: 100%">
+    Доставка
+  </button>
+  <ul class="dropdown-menu " style="width:100%">
+    <li  class="dropdown-item ms-1 "style="width: 100%" >В срок
+  </li>
+    <li  class="dropdown-item ms-1 "style="width: 100%" >Задержали
+  </div>
+  </div></span>
+  <span class="dropdown-item " style="margin-top: 0"> <div class="mb-3">
+  <label for="exampleFormControlInput4" class="form-label"> Ваш комментарий</label>
+  <input type="email" class="form-control" id="exampleFormControlInput4" placeholder="" style="width:30%"></span></div></span>
+  <a href="#" class="ms-3">Загрузить изображение</a>
+  <button style="display:inline-block;width:20%; background-color: lightblue;color:white;" class="rounded ms-3 mt-5 p-3">Отправить</button><button style="display:inline-block; width:20%; " class="border border-solid rounded mt-1 ms-3 p-3">Отмениить</button>
+</div>
+</div>
+ <div class="row mt-3 border rounded" style="background:  #2988BC; font-weight: 600"><div class="col-4"> <i class="fa fa-star-o mx-1 mt-3" aria-hidden="true" style="font-size:250%; color: #F4EADE" ></i> <span style="font-size:200% " class="mt-3">Гарантия</span>
+  <p>Качественные экологичные материалы. Контроль каждого изделия</p></div><div class="col-4"><i class="fa fa-archive mx-1 mt-3" aria-hidden="true" style="font-size:250%; color: #F4EADE"></i><span style="font-size:200%" class="mt-3">Доставка</span><p>Быстрая доставка по России. Доставка по всему миру</p></div><div class="col-4"><i class="fa fa-headphones mx-1 mt-3" aria-hidden="true" style="font-size:250%; color: #F4EADE"></i><span style="font-size:200%" class="mt-3">Сервис</span><p>Лёгкий процесс оплаты, обмена и возврата</p></div> </div>
+  <div class="row mt-3" style="padding-bottom: 10%"><div class="col-3 rounded" style="background-color: #F4EADE;padding-bottom: 10%"><div class="row"><div class="col-3"><i class="fa fa-gift" aria-hidden="true" style="font-size:600%; "></i></div><div class="col-9 mt-1"><span style="font-size: 300%;font-weight: 700; margin-bottom:0; "> 500 ₽</span><p style="margin-top:0;font-weight: 700;">в подарок</p></div></div>
+  <p>Подпишитесь на наши рассылки и получите 500 ₽ в подарок на первый заказ</p>
+  <form class="d-flex">
+        <input class="form-control  mx-0" type="search" placeholder="Поиск" aria-label="Поиск" >
+        <button class="btn btn-outline-dark ms-0" type="submit" style="background-color: #2988BC" ><i class="fa fa-envelope-o" aria-hidden="true" style="color:white"></i></button>
+      </form>
+</div>
+<div class="col-2 "><p style="font-weight: 600">Информация</p> <a href="#" style="color:black;text-decoration: none"><p>Как сделать заказ?</p></a><a href="#" style="color:black;text-decoration: none"><p>Доставка</p></a><a href="#" style="color:black;text-decoration: none"><p>Обмен и возврат</p></a><a href="#" style="color:black;text-decoration: none"><p>Где мой заказ?</p></a><a href="#" style="color:black;text-decoration: none"><p>Способы оплаты</p></a><a href="#" style="color:black;text-decoration: none"><p>Пользовательское соглашение</p></a><a href="#" style="color:black;text-decoration: none"><p>Акции и скидки</p></a><a href="#" style="color:black;text-decoration: none"><p>Юридическая информация</p></a></div>
+<div class="col-2"><p style="font-weight: 600">О компании</p> <a href="#" style="color:black;text-decoration: none"><p>О нас</p></a><a href="#" style="color:black;text-decoration: none"><p>Контакты</p></a><a href="#" style="color:black;text-decoration: none"><p>Вакансии</p></a><a href="#" style="color:black;text-decoration: none"><p>Отзывы</p></a><a href="#" style="color:black;text-decoration: none"><p>Наше производство</p></a><a href="#" style="color:black;text-decoration: none"><p>Сертификаты</p></a><a href="#" style="color:black;text-decoration: none"><p>Блог XXXTentancion</p></a></div>
+<div class="col-2"><p style="font-weight: 600">Сотрудничество</p> <a href="#" style="color:black;text-decoration: none"><p>Оптовым клиентам</p></a><a href="#" style="color:black;text-decoration: none"><p>Дизайнерам</p></a><a href="#" style="color:black;text-decoration: none"><p>Партнерская программа</p></a><a href="#" style="color:black;text-decoration: none"><p>Корпоративным клиентам</p></a></div>
+<div class="col-3"><p style="font-weight: 500">Контакты</p>
+<p>+7 (800) 555-35-35</p>
+<p>xxx@gmail.com</p>
+<div class="row"><div class="col-2  ms-1 p-1 border-solid rounded-pill" style="background-color: black;color:white; text-align: center" ><i class="fa fa-vk" aria-hidden="true"></i></div><div class="col-2 ms-1 p-1 border-solid rounded-pill" style="background-color: black;color:white; text-align: center" ><i class="fa fa-youtube-play" aria-hidden="true"></i></div><div class="col-2  ms-1 p-1 border-solid rounded-pill" style="background-color: black;color:white; text-align: center" ><i class="fa fa-instagram" aria-hidden="true"></i></div><div class="col-2 ms-1 p-1 border-solid rounded-pill" style="background-color: black;color:white; text-align: center" ><i class="fa fa-twitter" aria-hidden="true"></i></div></div></div></div>
+
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="../jquery.min.js"></script>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+</body>
+</html>

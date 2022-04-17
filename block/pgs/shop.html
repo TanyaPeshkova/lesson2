@@ -25,17 +25,18 @@
 background-color: #8B0000;
 
 }
-
+.dropdown-item {
+	background-color: white;
+}
 .btn: {
 	font-weight: 600;
 }
 .btn:hover, .form-check:hover,.dropdown-item:hover, .hov:hover {
-	background-color: #a30808;
+	background-color:#07575B;
 	color:white;
-
 }
 #xx {
-	color:#8B0000;;
+	color:#063852
 }
 #xx:hover {
 	color:white;
@@ -45,9 +46,31 @@ a {
 }
 
 </style>
+<script type="text/javascript">	
+        var imgs=new Array('../img/xxx1.jpg','../img/xxx2.jpg','../img/xxx3.jpg','../img/xxx4.jpg','../img/xxx5.jpg','../img/xxx6.jpg','../img/xxx7.jpg','../img/xxx8.jpg','../img/xxx9.jpg','../img/xxx10.jpg','../img/xxx11.jpg','../img/xxx12.jpg')
+        function imgsrc(p,num) {
+
+            p.src = imgs[num + 5]
+        }
+        function imgout (p,num) {
+        	p.src = imgs[num - 1]
+        }
+        let prov = true
+        let elems = ['fi','vt','tr','cht','py','she','liveToast']
+ function liked (p) {
+ 	document.getElementById(elems[p]).classList.toggle('fa-heart')
+ 	document.getElementById(elems[p]).classList.toggle('fa-heart-o')
+ }
+
+function toast() {
+	document.getElementById(elems[6]).classList.toggle('show');
+	 setTimeout("document.getElementById('liveToast').classList.toggle('show')",3000)
+}
+
+</script>
 </head>
 <body >
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="tt">
   <div class="container-fluid color">
     <a class="navbar-brand " href="../index.html">Главная страница</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -330,8 +353,8 @@ a {
   	<p><a href="#">Все фильтры →</p></a> </div>
   <div class="col-3"></div>
   </div>
-	</div>
-<div class="card text-center mt-3">
+	</div> 
+<div class="card text-center mt-3"> 
   <div class="card-body">
     <h5 class="card-title">Сделаем сайт лучше!</h5>
     <p class="card-text" style="color:grey;">Пожалуйста, оставьте на несколько вопросов.</p>
@@ -342,12 +365,12 @@ a {
  			
 		<div class="row">
 			<div class="col-12 col-md-4 col-sm-6">
-				<div class="card"  >
+				<a href="product1.html"><div class="card"  >
 					<div class="card-header p-0">
-						<img class="card-img-top" src="../img/xxx1.jpg">
+						<img class="card-img-top" src="../img/xxx1.jpg" id="firstpic" onmouseenter ="imgsrc(firstpic,1)" onmouseout="imgout(firstpic,1)">
 					</div>
 					<div class="card-body">
-						<a href="#" class="cars-title">Свитшот 3D. </br>XXXTentancion Broken Heart</a>
+						<a href="product1.html" class="cars-title">Свитшот 3D. </br>XXXTentancion Broken Heart</a>
 						<div class="card-text my-1">
 							<div class="row">
 								<div class="col-6">
@@ -375,10 +398,11 @@ a {
 		<div  class=" rounded p-1 m-1 ps-3 col-6" style="background-color: #F5F5F5; ">
 			<h3>1990 ₽</h3>
 		</div>
-		<div class="border border-1 rounded p-2 ps-3 col-2 hov" style="margin: 2%;margin-left: 7%;">
-				<i class="fa fa-heart-o" aria-hidden="true"></i></div>
-				<div  class=" border border-1 rounded p-2 ps-3 col-2 hov"style="margin: 2%" >
-					<i class="fa fa-shopping-cart" aria-hidden="true" ></i>	</div>
+		<div class="border border-1 rounded p-2 ps-3 col-2 hov" style="margin: 2%;margin-left: 7%;" onclick="liked(0)" id="liveToastBtn" >
+				<i class="fa fa-heart-o " aria-hidden="true" id="fi"></i></div>
+				<div  class=" border border-1 rounded p-2 ps-3 col-2 hov"style="margin: 2%"onclick="toast()" >
+					<i class="fa fa-shopping-cart" aria-hidden="true"  ></i>	
+				</div>
 							</div>
 						</div>
 				</div>
@@ -386,11 +410,21 @@ a {
 						<p style="margin-bottom: 1%">В магазинах: <a href="#"> 7 апреля (чт)</a></p>
 						<p>Доставим на дом:<a href="#">  7 апреля (чт)</a></p>
 					</div>			</div>
-			</div></div>
+			</div></div></a><div class="position-fixed bottom-0 end-0 p-3" style="z-index:11">
+    <div id="liveToast" class="toast " role="alert" aria-live="assertive" aria-atomic="true" style="color:black">
+      <div class="toast-header">
+        <strong class="me-auto">Оповещение</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Закрыть"></button>
+      </div>
+      <div class="toast-body">
+        Этот товар был добавлен в Вашу корзину!
+      </div>
+    </div>
+  </div>
 			<div class="col-12 col-md-4 col-sm-6">
 			<div class="card" >
 					<div class="card-header p-0">
-						<img class="card-img-top" src="../img/xxx2.jpg">
+						<img class="card-img-top" src="../img/xxx2.jpg" id="sencondpic" onmouseenter ="imgsrc(sencondpic,2)" onmouseout="imgout(sencondpic,2)">
 					</div>
 					<div class="card-body">
 						<a href="#" class="cars-title">Мужская футболка хлопок Slim.
@@ -422,9 +456,9 @@ a {
 		<div  class=" rounded p-1 m-1 ps-3 col-6" style="background-color: #F5F5F5; ">
 			<h3>1590 ₽</h3>
 		</div>
-		<div class="border border-1 rounded p-2 ps-3 col-2 hov" style="margin: 2%;margin-left: 7%;">
-				<i class="fa fa-heart-o" aria-hidden="true"></i></div>
-				<div  class=" border border-1 rounded p-2 ps-3 col-2 hov"style="margin: 2%" >
+		<div class="border border-1 rounded p-2 ps-3 col-2 hov" style="margin: 2%;margin-left: 7%;" onclick="liked(1)">
+				<i class="fa fa-heart-o " aria-hidden="true" id="vt" ></i></div>
+				<div class=" border border-1 rounded p-2 ps-3 col-2 hov"style="margin: 2%" id="liveToastBtn" onclick="toast()">
 					<i class="fa fa-shopping-cart" aria-hidden="true" ></i>	</div>
 							</div>
 						</div>
@@ -437,7 +471,7 @@ a {
 			<div class="col-12 col-md-4 col-sm-6">
 				<div class="card"  >
 					<div class="card-header p-0">
-						<img class="card-img-top" src="../img/xxx3.jpg">
+						<img class="card-img-top" src="../img/xxx3.jpg" id="thirdpic" onmouseenter ="imgsrc(thirdpic,3)" onmouseout="imgout(thirdpic,3)">
 					</div>
 					<div class="card-body">
 						<a href="#" class="cars-title">Рюкзак 3D
@@ -469,10 +503,10 @@ a {
 		<div  class=" rounded p-1 m-1 ps-3 col-6" style="background-color: #F5F5F5; ">
 			<h3>3085 ₽</h3>
 		</div>
-		<div class="border border-1 rounded p-2 ps-3 col-2 hov" style="margin: 2%;margin-left: 7%;">
-				<i class="fa fa-heart-o" aria-hidden="true"></i></div>
-				<div  class=" border border-1 rounded p-2 ps-3 col-2 hov"style="margin: 2%" >
-					<i class="fa fa-shopping-cart" aria-hidden="true" ></i>	</div>
+		<div class="border border-1 rounded p-2 ps-3 col-2 hov" style="margin: 2%;margin-left: 7%;" onclick="liked(2)">
+				<i class="fa fa-heart-o" id="tr"aria-hidden="true"></i></div>
+				<div  class=" border border-1 rounded p-2 ps-3 col-2 hov"style="margin: 2%" onclick="toast()">
+					<i class="fa fa-shopping-cart" aria-hidden="true"  ></i>	</div>
 							</div>
 						</div>
 				</div>
@@ -487,7 +521,7 @@ a {
 			<div class="col-12 col-md-4 col-sm-6">
 				<div class="card"  >
 					<div class="card-header p-0">
-						<img class="card-img-top" src="../img/xxx4.jpg">
+						<img class="card-img-top" src="../img/xxx4.jpg" id="forthpic" onmouseenter ="imgsrc(forthpic,4)" onmouseout="imgout(forthpic,4)">
 					</div>
 					<div class="card-body">
 						<a href="#" class="cars-title">Мужская толстовка хлопок.
@@ -519,9 +553,9 @@ a {
 		<div  class=" rounded p-1 m-1 ps-3 col-6" style="background-color: #F5F5F5; ">
 			<h3>2790 ₽</h3>
 		</div>
-		<div class="border border-1 rounded p-2 ps-3 col-2 hov" style="margin: 2%;margin-left: 7%;">
-				<i class="fa fa-heart-o" aria-hidden="true"></i></div>
-				<div  class=" border border-1 rounded p-2 ps-3 col-2 hov"style="margin: 2%" >
+		<div class="border border-1 rounded p-2 ps-3 col-2 hov"onclick="liked(3)" style="margin: 2%;margin-left: 7%;">
+				<i class="fa fa-heart-o" id="cht" aria-hidden="true" ></i></div>
+				<div  class=" border border-1 rounded p-2 ps-3 col-2 hov"style="margin: 2%"onclick="toast()" >
 					<i class="fa fa-shopping-cart" aria-hidden="true" ></i>	</div>
 							</div>
 						</div>
@@ -534,7 +568,7 @@ a {
 			<div class="col-12 col-md-4 col-sm-6">
 			<div class="card" >
 					<div class="card-header p-0">
-						<img class="card-img-top" src="../img/xxx5.jpg">
+						<img class="card-img-top" src="../img/xxx5.jpg" id="fiftpic" onmouseenter ="imgsrc(fiftpic,5)" onmouseout="imgout(fiftpic,5)">
 					</div>
 					<div class="card-body">
 						<a href="#" class="cars-title">Мужская толстовка 3D.
@@ -567,9 +601,9 @@ a {
 		<div  class=" rounded p-1 m-1 ps-3 col-6" style="background-color: #F5F5F5; ">
 			<h3>2099 ₽</h3>
 		</div>
-		<div class="border border-1 rounded p-2 ps-3 col-2 hov" style="margin: 2%;margin-left: 7%;">
-				<i class="fa fa-heart-o" aria-hidden="true"></i></div>
-				<div  class=" border border-1 rounded p-2 ps-3 col-2 hov"style="margin: 2%" >
+		<div class="border border-1 rounded p-2 ps-3 col-2 hov" style="margin: 2%;margin-left: 7%;" onclick="liked(4)">
+				<i class="fa fa-heart-o" id="py"aria-hidden="true" ></i></div>
+				<div  class=" border border-1 rounded p-2 ps-3 col-2 hov"style="margin: 2%" onclick="toast()">
 					<i class="fa fa-shopping-cart" aria-hidden="true" ></i>	</div>
 							</div>
 						</div>
@@ -582,7 +616,7 @@ a {
 			<div class="col-12 col-md-4 col-sm-6">
 				<div class="card"  >
 					<div class="card-header p-0">
-						<img class="card-img-top" src="../img/xxx6.jpg">
+						<img class="card-img-top" src="../img/xxx6.jpg" id="sixpic" onmouseenter ="imgsrc(sixpic,6)" onmouseout="imgout(sixpic,6)">
 					</div>
 					<div class="card-body">
 						<a href="#" class="cars-title">Мужская футболка 3D
@@ -610,12 +644,14 @@ a {
 </div> <span>18</span>
 						</div>	
 					</div>
+
 <div class="row ">
+
 		<div  class=" rounded p-1 m-1 ps-3 col-6" style="background-color: #F5F5F5; ">
 			<h3>980 ₽</h3>
 		</div>
-		<div class="border border-1 rounded p-2 ps-3 col-2 hov" style="margin: 2%;margin-left: 7%;">
-				<i class="fa fa-heart-o" aria-hidden="true"></i></div>
+		<div class="border border-1 rounded p-2 ps-3 col-2 hov" style="margin: 2%;margin-left: 7%;" onclick="liked(5)" onclick="toast()">
+				<i class="fa fa-heart-o"id="she" aria-hidden="true" ></i></div>
 				<div  class=" border border-1 rounded p-2 ps-3 col-2 hov"style="margin: 2%" >
 					<i class="fa fa-shopping-cart" aria-hidden="true" ></i>	</div>
 							</div>
@@ -630,7 +666,12 @@ a {
 		</div>
 	</div>
 </div>
+
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="../jquery.min.js"></script>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
 </body>
 </html>
