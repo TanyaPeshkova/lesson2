@@ -7,6 +7,17 @@
   <link rel="stylesheet"  href="../css/bootstrap.min.css">
     <link rel="stylesheet"  href="../css/font-awesome.min.css">
     <style type="text/css">
+      div::-webkit-scrollbar {
+  width: 20px;   
+}
+      div::-webkit-scrollbar-track {
+  background-color: #212529; 
+
+}
+ div::-webkit-scrollbar-thumb {
+  background-color: white;   
+  border-radius: 20px;
+}
       footer {
       text-align: center;
     }
@@ -23,7 +34,9 @@
       text-decoration: none;
     }
       .otziv {
-border: 22px solid grey;background-color: #3f3f3f
+border: 22px solid grey;
+background-color:#7E8994;
+margin-right: 5%;
       }
     </style>
   <script type="text/javascript">
@@ -50,7 +63,8 @@ function init() {
         
     var ul = document.getElementById("commList");
         ul.appendChild(li);
-    textInput.value = "";textInput2.value = "";
+    textInput.value = "";
+    textInput2.value = "";
     }
 }
   </script>
@@ -73,6 +87,10 @@ function init() {
         <li class="nav-item">
           <a class="nav-link" href="songs.html">Песни</a>
         </li>
+           <li class="nav-item">
+          <a class="nav-link" href="pgs/shop.html">
+          Магазин</a>
+        </li>
       </ul>
       <form class="d-flex" >
         <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
@@ -84,13 +102,13 @@ function init() {
 
 <div class="container ">
 <div class="row" style="font-size: 120%; color: white;">
-<div class="col-12" >
+<div class="col-12 " >
   <img src="../img/15.png" style=" width: 100% ;"></div>
-<div class="col-9 mt-3 bg-dark" style="color:white; border-radius: 25px;">
+<div class="col-9 mt-3 bg-dark" style="color:white; border-radius: 25px; padding: 15px;box-shadow: 7px 7px 5px rgba(0,0,0,0.3);">
    <div class="row">
- <div class="mb-3">
-  <h1 class="mt-4">Творческий путь XXXTentacion-а</h1>
-  <p>Джасей Дуэйн Онфрой (Jahseh Dwayne Onfroy), известный поклонникам как XXXTentacion, был объявлен мертвым в понедельник днем (18 июня 2018). Сообщается, что он был ограблен и застрелен после того, как вышел из магазина мотоциклов в Дирфилд-Бич, штат Флорида. Сначала портал TMZ сообщил о стрельбе, затем появилось сообщение о госпитализации, и уже через пару часов смерть музыканта была подтверждена Департаментом Правопорядка округа Бровард. На момент смерти Онфрою было 20 лет.</p>
+ <div class="mb-3 ">
+  <h1 class="mt-4" style="text-align: center;">Творческий путь XXXTentacion-а</h1>
+  <p >Джасей Дуэйн Онфрой (Jahseh Dwayne Onfroy), известный поклонникам как XXXTentacion, был объявлен мертвым в понедельник днем (18 июня 2018). Сообщается, что он был ограблен и застрелен после того, как вышел из магазина мотоциклов в Дирфилд-Бич, штат Флорида. Сначала портал TMZ сообщил о стрельбе, затем появилось сообщение о госпитализации, и уже через пару часов смерть музыканта была подтверждена Департаментом Правопорядка округа Бровард. На момент смерти Онфрою было 20 лет.</p>
   <p style="text-align: right; color:lightgrey">"Если я умру или когда-либо буду убит, я хочу быть уверенным, что моя жизнь сделала счастливыми по крайней мере пять миллионов детей, или они нашли какие-то ответы на свои вопросы, или мотивацию в моей жизни… Независимо от всего негатива вокруг моего имени, независимо от плохих вещей, которые люди говорят обо мне."</p>
   <p>— сказал он во время недавнего стрима в Instagram.</p>
  <img src="../img/xxxc.jpg" style="width:100%;" />
@@ -106,7 +124,7 @@ XXXTentacion был выдающейся фигурой в движении Soun
 Перед вами жизненный и творческий путь, который XXXTentacion успел пройти, от SoundCloud рэпера до хип-хоп звезды мирового масштаба.</p>
 <div style="border-top: solid grey 1px;" id="comms"> 
   <h4>Комментарии</h4>
-   <div  style="overflow-y: scroll;height:200px; ">
+   <div  style="overflow-y: scroll;height:200px;">
 <ul style="list-style: none" id="commList">
   <li class="border rounded otziv mb-3" ><div class="ms-3"><p ><i class="fa fa-user-circle-o" aria-hidden="true"></i> Варвара Симонова  22/01/2020</p> <p>Так он же умер...</p></div></li>
     <li class="border rounded otziv mb-3" ><div class="ms-3"><p ><i class="fa fa-user-circle-o" aria-hidden="true"></i> Виолетта Де Вилль  05/10/2020</p> <p>В почему не написали ффакты о том что его любимый цвет синий?</p></div></li>
