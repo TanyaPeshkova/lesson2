@@ -47,6 +47,21 @@ background-color: #07575B;
 a {
 	color:#8B0000;
 }
+	footer {
+			text-align: center;
+		}
+		footer i {
+			color: white;
+			display: inline-block;
+			width: 3%;
+		}
+		footer a i:hover {
+			 
+				font-size: 120%;
+		}
+		footer a {
+			text-decoration: none;
+		}
 
 </style>
 <script type="text/javascript">	
@@ -58,7 +73,6 @@ a {
         function imgout (p,num) {
         	p.src = imgs[num - 1]
         }
-        let prov = true
         let elems = ['fi','vt','tr','cht','py','she','liveToast']
  function liked (p) {
  	document.getElementById(elems[p]).classList.toggle('fa-heart')
@@ -73,7 +87,7 @@ function toast() {
 </script>
 </head>
 <body >
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="tt">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid color">
     <a class="navbar-brand " href="../index.html">Главная страница</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -143,7 +157,7 @@ function toast() {
     Наличие в магазинах<i class="fa fa-chevron-down ms-3" aria-hidden="true"></i>
   </button>
 </p>
-<div class="collapse " id="collapseExample2" style="margin-top: 0;" >
+<div class="collapse " id="collapseExample2" style="margin-top: 0; 	 width: 99%" >
 	<div class="card card-body "style="border-top: none">
 	<div class="btn-group mt-2">
   <button class="btn btn-light btn dropdown-toggle ms-1  "  type="button" data-bs-toggle="dropdown" aria-expanded="false" style="border: solid 1px lightgrey; border-radius: 10px; background-color: white;">
@@ -206,8 +220,8 @@ function toast() {
     Цена </span>
   </button>
 </p>
-<div class="collapse" id="collapseExample" style="margin-top: 0" >
-  <div class="card card-body "style="border-top: none">
+<div class="collapse" id="collapseExample" style="margin-top: 0;" >
+  <div class="card card-body "style="border-top: none; ">
     <div class="row"> <div class="col-6 "> <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="от 1299" aria-label="от 499"></div><div class="col-6"></form><form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="до 224999" aria-label="до 22999"></div></div></form>
@@ -243,7 +257,7 @@ function toast() {
   </button>
 </p>
 <div class="collapse" id="collapseExample5" style="margin-top: 0" >
-  <div class="card card-body "style="border-top: none">
+  <div class="card card-body "style="border-top: none;">
     <div class="row "> 
 <div class="form-check mt-1 ms-2">
   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault14">
@@ -373,11 +387,11 @@ function toast() {
 						<img class="card-img-top" src="../img/xxx1.jpg" id="firstpic" onmouseenter ="imgsrc(firstpic,1)" onmouseout="imgout(firstpic,1)">
 					</div>
 					<div class="card-body">
-						<a href="product1.html" class="cars-title">Свитшот 3D. </br>XXXTentancion Broken Heart</a>
+						<a href="product1.html" class="card-title">Свитшот 3D. </br>XXXTentancion Broken Heart</a>
 						<div class="card-text my-1">
 							<div class="row">
 								<div class="col-6">
-							<div class=" border border-1 rounded-pill p-1 ps-2 hov" >
+							<div class=" border border-1  rounded-pill  p-1 ps-2 hov " >
 								<div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
   <label class="form-check-label" for="flexCheckDefault">
@@ -430,7 +444,7 @@ function toast() {
 						<img class="card-img-top" src="../img/xxx2.jpg" id="sencondpic" onmouseenter ="imgsrc(sencondpic,2)" onmouseout="imgout(sencondpic,2)">
 					</div>
 					<div class="card-body">
-						<a href="#" class="cars-title">Мужская футболка хлопок Slim.
+						<a href="#" class="card-title">Мужская футболка хлопок Slim.
 						XXXtentancion (LEGEND)</a>
 						<div class="card-text my-1">
 							<div class="row">
@@ -477,7 +491,7 @@ function toast() {
 						<img class="card-img-top" src="../img/xxx3.jpg" id="thirdpic" onmouseenter ="imgsrc(thirdpic,3)" onmouseout="imgout(thirdpic,3)">
 					</div>
 					<div class="card-body">
-						<a href="#" class="cars-title">Рюкзак 3D
+						<a href="#" class="card-title">Рюкзак 3D
 						XXXTentancion - BAD</a>
 						<div class="card-text my-1">
 							<div class="row">
@@ -527,7 +541,7 @@ function toast() {
 						<img class="card-img-top" src="../img/xxx4.jpg" id="forthpic" onmouseenter ="imgsrc(forthpic,4)" onmouseout="imgout(forthpic,4)">
 					</div>
 					<div class="card-body">
-						<a href="#" class="cars-title">Мужская толстовка хлопок.
+						<a href="#" class="card-title">Мужская толстовка хлопок.
 						XXXtentancion (4)</a>
 						<div class="card-text my-1">
 							<div class="row">
@@ -574,7 +588,7 @@ function toast() {
 						<img class="card-img-top" src="../img/xxx5.jpg" id="fiftpic" onmouseenter ="imgsrc(fiftpic,5)" onmouseout="imgout(fiftpic,5)">
 					</div>
 					<div class="card-body">
-						<a href="#" class="cars-title">Мужская толстовка 3D.
+						<a href="#" class="card-title">Мужская толстовка 3D.
 						</br>
 						Revenge</a>
 						<div class="card-text my-1">
@@ -622,7 +636,7 @@ function toast() {
 						<img class="card-img-top" src="../img/xxx6.jpg" id="sixpic" onmouseenter ="imgsrc(sixpic,6)" onmouseout="imgout(sixpic,6)">
 					</div>
 					<div class="card-body">
-						<a href="#" class="cars-title">Мужская футболка 3D
+						<a href="#" class="card-title">Мужская футболка 3D
 						"XXXTentancion"</a>
 						<div class="card-text my-1">
 							<div class="row">
@@ -668,8 +682,10 @@ function toast() {
 		</div>
 		</div>
 	</div>
-</div>
-
+</div></p></div>
+<footer style="background-color: #212529;">
+	<a href="#"><i class="fa fa-instagram " aria-hidden="true" ></i> </a> <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> </a><a href="#"><i class="fa fa-music" aria-hidden="true"></i></a><a href="#"><i class="fa fa-spotify" aria-hidden="true"></i></a>
+</footer>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="../jquery.min.js"></script>
